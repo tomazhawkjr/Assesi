@@ -48,8 +48,11 @@ margin-bottom: 20px;
 h4 {
 font-family: 'Varela Round', sans-serif;
 text-transform: uppercase;
-color:#0066FF;
+color: #0066FF;
 margin-bottom: 20px;
+border-left-color: #0066FF;
+border-left-style: solid;
+padding-left: 15px;
 }
 
 .conteudo-central {
