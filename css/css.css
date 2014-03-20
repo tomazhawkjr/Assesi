@@ -1,63 +1,92 @@
 body{
-	
-font-family: 'News Cycle', sans-serif;
-background-image:url('../imagens/fundo.png');
-background-attachment: fixed;
-
-
+background-color: #FFF;
 }
 
-.container-fluid{margin-left:10%;height:100%;display:table;width:100%;padding-right:0;padding-left: 0}   
+.container-fluid{height:100%;display:table;width:100%;padding-right:0;padding-left: 0}   
 .row-fluid{height:100%;display:table-cell;vertical-align:middle;width:100%}
 .centering{float:none;margin:0 auto} 
 
 
 #header{
-	
-width:100%;
 height: 250px;
-background-image:url('../imagens/fundo_cabecalho.png');
+background-image:url('../imagens/fundoCabecalho.png');
 color: white;
-
- 
 }
+
+p{
+
+font-family: 'Raleway', sans-serif;
+	
+}
+
 
 #conteudo{
-
 margin-bottom: 30px;
-
 }
 
-#conteudo-central {
 
-padding: 40px 40px 40px 40px;
-background-color:#FFFFFF;
-height: 600px;
+h1{
+font-family: 'Varela Round', sans-serif;
+color:#0066FF;
+font-weight: bold;
+}
 
 
-border-radius: 0px 0px 3px 3px;
+h2{
+font-family: 'Varela Round', sans-serif;
+color:#0066FF;
+font-weight: bold;		
+}
 
+h3 {
+font-family: 'Varela Round', sans-serif;
+text-transform: uppercase;
+color:#0066FF;
+margin-bottom: 20px;
+}
+
+h4 {
+font-family: 'Varela Round', sans-serif;
+text-transform: uppercase;
+color:#0066FF;
+margin-bottom: 20px;
+}
+
+.conteudo-central {
+padding: 3px 25px 10px 25px;
+margin-top: 20px;
+margin-left: 30px;
+margin-bottom: 50px;
+}
+
+.conteudo-direita {
+padding: 10px 40px 10px 25px;
+margin-bottom: 20px;
+margin-top: 15px;
+/*box-shadow: 0 4px 30px 6px rgba(0,0,0,0.15);*/
 }
 
 
 #menu{
-
-border-radius: 0px 0px 10px 10px;
-background-color: #FFFFFF;
-/*box-shadow: 0 4px 30px 6px rgba(0,0,0,0.15);*/
-
-
+background-color: #0066FF
 }
 
 #menu ul li a{
-	
-color:#0066FF;;
+color:#ffffff;
+padding-left: 22px;
+font-family: 'Varela Round', sans-serif;
+text-transform: uppercase;
 
+border-color:white;
+	
+border-style:solid;
+border-left-width:0px;
+border-right-width:0px;
+border-bottom-width:2px;
+border-top-width:0px;
 }
 
 #menu ul li a:hover{
-	
-background-color:#0066FF;
+background-color:#ff0000;
 color:white;
-
 }
