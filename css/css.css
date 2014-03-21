@@ -1,5 +1,6 @@
 body{
 background-color: #FFF;
+background-image: url('../imagens/fundo_site.png') no-repeat;
 }
 
 .container-fluid{height:100%;display:table;width:100%;padding-right:0;padding-left: 0}   
@@ -11,6 +12,26 @@ background-color: #FFF;
 height: 250px;
 background-image:url('../imagens/fundoCabecalho.png');
 color: white;
+}
+
+#marca{
+    
+margin-left: 40px;
+    
+}
+
+.redes_sociais{
+
+margin-left: 70%;
+margin-top: 35px;
+    
+
+}
+
+.redes_sociais:hover{
+
+-webkit-filter: contrast(340%);
+
 }
 
 p{
@@ -34,7 +55,7 @@ font-weight: bold;
 
 h2{
 font-family: 'Varela Round', sans-serif;
-color:#0066FF;
+color:#FFF;
 font-weight: bold;		
 }
 
@@ -56,8 +77,6 @@ padding-left: 15px;
 }
 
 .conteudo-central {
-padding: 3px 25px 10px 25px;
-margin-top: 20px;
 margin-left: 30px;
 margin-bottom: 50px;
 }
@@ -92,4 +111,10 @@ border-top-width:0px;
 #menu ul li a:hover{
 background-color:#ff0000;
 color:white;
+}
+
+#carrossel{
+
+margin-bottom: 40px;
+    
 }
