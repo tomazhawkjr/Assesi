@@ -14,6 +14,20 @@ background-image:url('../imagens/fundoCabecalho.png');
 color: white;
 }
 
+.caixa_carousel{
+	
+background-color: #0066FF;
+
+
+	
+}
+
+.texto_carousel{
+
+margin-top: -5px;
+	
+}
+
 #marca{
     
 margin-left: 40px;
