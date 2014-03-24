@@ -14,22 +14,83 @@ background-image:url('../imagens/fundoCabecalho.png');
 color: white;
 }
 
+p{
+
+font-family: 'Raleway', sans-serif;
+text-align:justify;
+	
+}
+
+p.footer{
+
+color:white;
+text-transform: uppercase;
+	
+}
+
+p.creditos{
+
+color:white;
+font-size: 10px;
+text-align: inherit;
+	
+}
+
+.footer_creditos{
+	
+margin-top: 5%;
+width: 200px;
+	
+}
+
+.lista_footer{
+
+font-size: 12px;
+color: white;
+list-style: none;
+margin-left: -40px;
+
+}
+
+#direitos{
+	
+
+color: white;
+background-color: #ff0000;
+padding-top: 9px;
+	
+}
+
+.conteudo_footer{
+
+margin-left: 20px;
+	
+}
+
+.footer_content{
+
+margin-top: 30px;
+left: 0;
+	
+}
+
 footer{
 
 background-color: #0066FF;
-height: 200px;
+height: 300px;
 margin-top: 100px;
 
 }
 
 .carousel-indicators {
+	
 bottom: -40;
 }
+
+
 .caixa_carousel{
 	
 background-color: #0066FF;
-
-
 	
 }
 
@@ -66,12 +127,6 @@ margin-top: 35px;
 
 }
 
-p{
-
-font-family: 'Raleway', sans-serif;
-text-align:justify;
-	
-}
 
 
 #conteudo{
