@@ -1,5 +1,5 @@
 body{
-background-color: #FFF;
+background-color: #f5f5f5;
 background-image: url('../imagens/fundo_site.png') no-repeat;
 }
 
@@ -9,7 +9,7 @@ background-image: url('../imagens/fundo_site.png') no-repeat;
 
 
 #header{
-height: 250px;
+height: 220px;
 background-image:url('../imagens/fundoCabecalho.png');
 color: white;
 }
@@ -83,8 +83,8 @@ left: 0;
 footer{
 
 background-color: #0066FF;
-height: 300px;
-margin-top: 100px;
+height: 250px;
+margin-top: 70px;
 
 }
 
@@ -115,7 +115,8 @@ margin-top: -5px;
 
 #marca{
     
-margin-left: 40px;
+margin-left: 5%;
+
     
 }
 
@@ -174,12 +175,13 @@ padding-left: 15px;
 }
 
 .conteudo-central {
-margin-left: 30px;
+margin-left: 10px;
 margin-bottom: 50px;
+
 }
 
 .conteudo-direita {
-padding: 10px 40px 10px 25px;
+padding: 10px 20px 10px 15px;
 margin-bottom: 20px;
 margin-top: 15px;
 /*box-shadow: 0 4px 30px 6px rgba(0,0,0,0.15);*/
@@ -213,8 +215,7 @@ color:white;
 #carrossel{
 
 margin-bottom: 60px;
-margin-left: -25px;
-margin-right: -25px;
+
 
     
 }
