@@ -180,11 +180,20 @@ margin-bottom: 50px;
 
 }
 
+.conteudo-meio{
+margin-top: 40px;
+	
+}
+
 .conteudo-direita {
 padding: 10px 20px 10px 15px;
 margin-bottom: 20px;
 margin-top: 15px;
 /*box-shadow: 0 4px 30px 6px rgba(0,0,0,0.15);*/
+}
+
+.conteudo-lado{
+margin-top: 40px;	
 }
 
 
