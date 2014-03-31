@@ -20,10 +20,16 @@ margin-left: -45px;
 	
 }
 
+b{
+
+color: #0066FF;
+	
+}
+
 p{
 
 font-family: 'Raleway', sans-serif;
-text-align:justify;
+text-align:left;
 	
 }
 
@@ -115,7 +121,7 @@ margin-top: -5px;
 
 #marca{
     
-margin-left: 5%;
+margin-left: 4%;
 
     
 }
@@ -192,6 +198,13 @@ margin-top: 15px;
 /*box-shadow: 0 4px 30px 6px rgba(0,0,0,0.15);*/
 }
 
+#iframe_lateral{
+
+border: 0px;
+height: 1100px;
+overflow: hidden;
+}
+
 .conteudo-lado{
 margin-top: 40px;	
 }
@@ -225,6 +238,11 @@ color:white;
 
 margin-bottom: 60px;
 
-
     
+}
+
+.galeria{
+
+	margin-bottom: 60px;
+	
 }
