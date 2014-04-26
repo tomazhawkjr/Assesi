@@ -10,6 +10,7 @@ background-image: url('../imagens/fundo_site.png') no-repeat;
 
 #header{
 height: 220px;
+width: 100%;
 background-image:url('../imagens/fundoCabecalho.png');
 color: white;
 }
@@ -90,7 +91,7 @@ footer{
 
 background-color: #0066FF;
 height: 250px;
-margin-top: 70px;
+
 
 }
 
@@ -121,7 +122,7 @@ margin-top: -5px;
 
 #marca{
     
-margin-left: 4%;
+margin-left: 10%;
 
     
 }
@@ -245,4 +246,25 @@ margin-bottom: 60px;
 
 	margin-bottom: 60px;
 	
+}
+
+
+#login{
+
+	width: 250px;
+	height: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 10%;
+
+
+}
+
+.area-restrita{
+
+	width: 180px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+
+
 }
