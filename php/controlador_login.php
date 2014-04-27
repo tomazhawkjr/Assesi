@@ -1,25 +1,23 @@
 <?php
 
 include 'gerenciadorArquivos.php';
-include 'repositorio_usuario.php;'
+include 'repositorio_usuario.php';
+
+$login = $_GET['login'];
+$senha = $_GET['senha'];
 
 $gerenciador = new gerenciadorArquivos();
-$repositorio = new repositorio_usuario();
+$diretorio = "e:\home\pilotoauto1\Web/assesi/usuarios/".$login."/";
 
 
-$login = $_POST['login'];
-$senha = $_POST['senha'];
+if(autenticar($login,$senha)){
 
-$repositorio_usuario->conectar();
+	echo $gerenciador->imprimeDiretorio($diretorio, $login);
 
-if($repositorio_usuario->autenticaUsuario($login,$senha)){
-
-	echo $gerenciador->imprimeDiretorio(getcwd());
 
 } else {
 
-	echo "<h3>Usuário Inválio, tente novamente<h3>
-		  <p><a href='#'>Voltar</a></p>"
+	echo "<h3>Usuário Inválido, tente novamente</h3><a href='#'>Voltar</a>";
 
 }
 

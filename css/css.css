@@ -74,6 +74,12 @@ padding-top: 9px;
 	
 }
 
+#listaarquivos{
+	
+margin-left: 8%;
+	
+}
+
 .conteudo_footer{
 
 margin-left: 30px;
@@ -266,5 +272,21 @@ margin-bottom: 60px;
 	margin-left: 10px;
 	margin-bottom: 20px;
 
+
+}
+
+#login a{
+
+	color: #FFF;
+	background-color: #0066FF;
+	padding: 5pt;
+
+}
+
+#email a{
+
+	color: #FFF;
+	background-color: #0066FF;
+	padding: 5pt;
 
 }

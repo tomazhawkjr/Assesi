@@ -4,13 +4,13 @@ function generateXMLHttp() {
 		return new XMLHttpRequest();
 	}
 	else{	
-	 	if (window.ActiveXObject){
+		if (window.ActiveXObject){
 			var versions = ["MSXML2.XMLHttp.5.0", 
-		                 "MSXML2.XMLHttp.4.0", 
-                                 "MSXML2.XMLHttp.3.0",
-		                 "MSXML2.XMLHttp", 
-		                 "Microsoft.XMLHttp"
-		               		];
+			"MSXML2.XMLHttp.4.0", 
+			"MSXML2.XMLHttp.3.0",
+			"MSXML2.XMLHttp", 
+			"Microsoft.XMLHttp"
+			];
 		}
 	}
 
@@ -20,29 +20,58 @@ function generateXMLHttp() {
 		}catch(e){}
 	}
 
-	alert('Utilize um navegador mais recente, este não tem suporte
-		a tecnologia utilizada');
+	alert("Utilize um navegador mais recente, este não tem suporte a tecnologia utilizada");
 }
 
-function logar() {
+
+function logar(){
 
 	var matricula 	= document.getElementById("matriculaInput").value;
 	var senha 		= document.getElementById("senhaInput").value;
 	var result  	= document.getElementById("login");
+	var direitos	= document.getElementById("direitos");
 
-	var XMLHttp = generateXMLHttp();
-	XMLHttp.open("get", "getData.php?matricula=" + matricula + "&senha=" + senha, true);
 
-	XMLHttp.onreadystatechange = function(){
+	if(matricula == "" || senha == ""){
 
-		if (XMLHttp.readyState == 4)
-			if (XMLHttp.status == 200){
-				result.innerHTML = XMLHttp.responseText;
+		result.innerHTML = "<p>Preencha login e senha</p> <a href='arearestrita.html'>Voltar</a>";
+
+	} else {
+
+		var XMLHttp = generateXMLHttp();
+		
+		XMLHttp.onreadystatechange = function(){
+
+			if (XMLHttp.readyState == 4){ 
+
+				if (XMLHttp.status == 200){
+
+					result.style.width = "600px";
+					direitos.style.display = "none";
+					result.innerHTML = XMLHttp.responseText;
+					result.setAttribute("id","listaarquivos");
+
+				} else {
+
+					if(XMLHttp.statusText == "Not Found")
+						result.innerHTML = "<p>Você não possui arquivos cadastrados</p> <a href='arearestrita.html'>Voltar</a>";
+				}
+
 			} else {
-				result.innerHTML = "Um erro ocorreu: " + XMLHttp.statusText;
+
+				result.innerHTML = "<p>Carregando...</p>";
+
 			}
 
-	};
-	XMLHttp.send(null);
+		}
+
+		XMLHttp.open("GET", "http://www.pilotoauto.com/assesi/php/controlador_login.php?login="+matricula+"&senha="+senha, true);
+		XMLHttp.send(null);
+
+	}
+
+
+	
+
 }
 

@@ -2,7 +2,8 @@
 
 class gerenciadorArquivos{
 
-	public function imprimeDiretorio($caminho){
+
+	public function imprimeDiretorio($caminho, $matricula){
 
 		$resposta;	
 		
@@ -10,19 +11,20 @@ class gerenciadorArquivos{
 		
 			foreach ($pastas as $pasta) {
 
-					if(is_dir($pasta)){
+					if(is_dir($caminho.$pasta)){
 
 						if($pasta!="." and $pasta!=".."){
 
-							$resposta.="<h3>".strtoupper($pasta)."<h3>";
+							$resposta.="<h3>".$pasta."</h3>";
 							
-							if($arquivos = scandir($pasta)){
+							if($arquivos = scandir($caminho.$pasta)){
 
 								foreach ($arquivos as $arquivo) {									
 
 									if($arquivo!="." and $arquivo!=".."){
 
-									$resposta.="<p> arquivo <a href='$arquivo'>$arquivo</a></p>";
+									$link = "../assesi/usuarios/".$matricula."/".$pasta."/".$arquivo;
+									$resposta.="<p><a href='$link' target='_blank'>$arquivo</a></p>";
 
 									}
 
@@ -39,7 +41,7 @@ class gerenciadorArquivos{
 
 					} else {
 
-						$resposta.="<p> arquivo <a href='$parta'>$pasta</a></p>";
+						//$resposta.="<p> arquivo <a href='$parta'>$pasta</a></p>";
 						
 					}
 		
