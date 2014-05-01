@@ -19,6 +19,7 @@
 
 	}
 
+
 	function fecharConexao(){
 
 		mysql_close();

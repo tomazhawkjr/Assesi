@@ -30,7 +30,7 @@ color: #0066FF;
 p{
 
 font-family: 'Raleway', sans-serif;
-text-align:left;
+text-align:justify;
 	
 }
 
@@ -44,7 +44,7 @@ text-transform: uppercase;
 p.creditos{
 
 color:white;
-font-size: 10px;
+font-size: 12px;
 text-align: inherit;
 	
 }
@@ -69,7 +69,7 @@ margin-left: -40px;
 	
 
 color: white;
-background-color: #ff0000;
+background-color: #003D97;
 padding-top: 9px;
 	
 }
@@ -128,7 +128,7 @@ margin-top: -5px;
 
 #marca{
     
-margin-left: 10%;
+margin-left: -2%;
 
     
 }
@@ -213,7 +213,8 @@ overflow: hidden;
 }
 
 .conteudo-lado{
-margin-top: 40px;	
+margin-top: 20px;
+margin-bottom: 30px;	
 }
 
 
@@ -244,6 +245,9 @@ color:white;
 #carrossel{
 
 margin-bottom: 60px;
+border: 2px;
+border-style: solid;
+border-color: #0066FF;
 
     
 }
