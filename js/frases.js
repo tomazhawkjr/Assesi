@@ -35,8 +35,11 @@ frases.push(new frase('A vida não consiste em ter boas cartas na mão e sim em 
 
 var month = 7;
 
-var today = new Date();
-var monthToday = today.getMonth()+1;
+var date = new Date();
+
+var today = date.getDate();
+var monthToday = date.getMonth()+1;
+
 var sort = Math.round(today/7)*Math.abs(month-monthToday);
 
 var fraseEscolhida;
@@ -44,8 +47,7 @@ var fraseEscolhida;
 if(sort>=0 && sort <=23){
 	fraseEscolhida = frases[sort];
 } else {
-	fraseEscolhida = frases[(Math.random()*23)+1];
-
+	fraseEscolhida = frases[Math.round(Math.random()*23)];
 }
 
 
